@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
           <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
             <div className="flex items-center gap-2">
               <span className="text-xl font-bold tracking-tight font-lora text-[#2c2a29]">
-                RLRL <span className="text-[#8c7e6c] font-light text-base ml-1">Head Skinification</span>
+                Head Skinification <span className="text-[#8c7e6c] font-light text-base ml-1">Journal</span>
               </span>
             </div>
             <nav className="flex items-center gap-6">
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
         </main>
 
         <footer className="border-t border-[#eae6df] bg-[#faf9f6] py-12 text-center text-xs text-[#8c7e6c] space-y-2">
-          <p>© {new Date().getFullYear()} RLRL (레알레알). All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Head Skinification Journal. All rights reserved.</p>
           <p className="text-[#b1a799]">
             Powered by Google Antigravity 2.0 Autonomous Agent System.
           </p>
