@@ -1,26 +1,82 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #faf9f6; /* 웜 오프화이트 크림톤 */
+  color: #2c2a29;            /* 딥 에스프레소 차콜톤 */
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+  letter-spacing: -0.01em;
+}
+
+/* 영어권 소비자가 선호하는 에디토리얼 Serif 서체 정의 */
+.font-lora {
+  font-family: 'Lora', Georgia, serif;
+}
+
+/* 프리미엄 에디토리얼 그리드 카드 */
+.editorial-card {
+  background: #ffffff;
+  border: 1px solid #eae6df;
+  border-radius: 4px; /* 각진 모던한 모서리 */
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-card:hover {
+  transform: translateY(-2px);
+  border-color: #c2b7a3;
+  box-shadow: 0 10px 30px -15px rgba(44, 42, 41, 0.08);
+}
+
+/* 텍스트 그라데이션 대신 진중하고 고급스러운 에센셜 컬러웨이 */
+.text-editorial-headline {
+  color: #2c2a29;
+  font-family: 'Lora', Georgia, serif;
+}
+
+/* 마크다운 본문 타이포그래피 (에디토리얼 매거진 감성) */
+.prose {
+  color: #4a4540;
+  line-height: 1.85;
+  font-size: 1.05rem;
+  letter-spacing: 0em;
+}
+
+.prose h1, .prose h2, .prose h3 {
+  color: #2c2a29;
+  font-family: 'Lora', Georgia, serif;
+  font-weight: 500;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose h2 {
+  font-size: 1.75rem;
+  border-bottom: 1px solid #eae6df;
+  padding-bottom: 0.5rem;
+}
+
+.prose p {
+  margin-bottom: 1.5rem;
+}
+
+.prose ul, .prose ol {
+  margin-left: 1.75rem;
+  margin-bottom: 1.5rem;
+  list-style-type: square; /* 모던한 사각형 불릿 */
+}
+
+.prose li {
+  margin-bottom: 0.6rem;
+}
+
+.prose blockquote {
+  border-left: 2px solid #8c7e6c;
+  padding-left: 1.5rem;
+  font-style: italic;
+  font-family: 'Lora', Georgia, serif;
+  color: #5c544e;
+  background: #f7f3eb;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 2rem 0;
 }

@@ -22,21 +22,21 @@ export default async function Post({ params }) {
   const htmlContent = marked.parse(post.content);
 
   return (
-    <div className="max-w-3xl mx-auto space-y-8">
+    <div className="max-w-3xl mx-auto space-y-12">
       {/* 아티클 헤더 */}
-      <header className="space-y-4 text-center py-6">
-        <div className="flex items-center justify-center gap-4 text-xs font-semibold text-purple-400 tracking-wider">
-          <span className="uppercase border border-purple-500/20 px-2.5 py-0.5 rounded-full bg-purple-500/5">
+      <header className="space-y-6 text-center py-8 border-b border-[#eae6df]">
+        <div className="flex items-center justify-center gap-4 text-xs font-semibold text-[#8c7e6c] tracking-widest uppercase">
+          <span className="border border-[#e1d5c3] px-3 py-0.5 rounded bg-[#f4ece1]">
             {post.유형 || 'Trend'}
           </span>
           <span>•</span>
           <span>Last Updated: {post.업데이트 || 'Recent'}</span>
         </div>
-        <h1 className="text-3xl md:text-5xl font-extrabold font-outfit text-white tracking-tight leading-tight">
+        <h1 className="text-3xl md:text-5xl font-normal font-lora text-[#2c2a29] tracking-tight leading-tight">
           {post.title || slug.replace(/_/g, ' ')}
         </h1>
         {post.description && (
-          <p className="text-gray-400 text-base md:text-lg italic font-light max-w-2xl mx-auto">
+          <p className="text-[#5c544e] text-base md:text-lg italic font-light max-w-2xl mx-auto leading-relaxed">
             {post.description}
           </p>
         )}
@@ -46,9 +46,9 @@ export default async function Post({ params }) {
       <AdSlot slotId="post-top-ad" />
 
       {/* 아티클 본문 */}
-      <article className="glass-panel rounded-3xl p-8 md:p-12">
+      <article className="editorial-card rounded-none p-8 md:p-14 bg-white">
         <div 
-          className="prose prose-invert max-w-none"
+          className="prose max-w-none"
           dangerouslySetInnerHTML={{ __html: htmlContent }}
         />
       </article>
@@ -57,12 +57,12 @@ export default async function Post({ params }) {
       <AdSlot slotId="post-bottom-ad" />
 
       {/* 목록으로 돌아가기 */}
-      <div className="text-center pt-6">
+      <div className="text-center pt-8">
         <a 
-          href="/"
-          className="inline-flex items-center gap-2 text-sm font-semibold text-purple-400 hover:text-purple-300 transition"
+          href="/blog-kbeauty/"
+          className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-[#8c7e6c] hover:text-[#2c2a29] transition"
         >
-          ← Back to Articles
+          ← Back to Curated Journals
         </a>
       </div>
     </div>
