@@ -1,3 +1,3 @@
-:HL["/blog-kbeauty/_next/static/chunks/3w8ai2zmibycz.css","style"]
+:HL["/blog-kbeauty/_next/static/chunks/2rcpbttri62vh.css","style"]
 :HL["https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"posts","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"blog_rosemary_scalp_scaling_guide","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"cxzYgbZAC-N4Hxv8EBnQt"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"posts","param":null,"prefetchHints":0,"slots":{"children":{"name":"slug","param":{"type":"d","key":"blog_rosemary_scalp_scaling_guide","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"VboiGXIvHdT5A0rxJkqfv"}
