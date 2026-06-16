@@ -13,12 +13,7 @@ export default function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-        {/* 구글 애드센스 스크립트 주입 */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
-          crossOrigin="anonymous"
-        ></script>
+
       </head>
       <body className="antialiased selection:bg-[#c3b59f]/30">
         <header className="sticky top-0 z-50 w-full border-b border-[#eae6df] bg-[#faf9f6]/80 backdrop-blur-md">
